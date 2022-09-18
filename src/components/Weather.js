@@ -5,7 +5,7 @@ const Weather = () => {
     const [search, setSearch] = useState("Bhopal")
     useEffect(() => {
         const fetchApi = async () => {
-            const url = `http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=9a28c9694cb3c265ffbe1207985a0919`;//to add a parameter use &
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=9a28c9694cb3c265ffbe1207985a0919`;//to add a parameter use &
             const response = await fetch(url);
             const resJson = await response.json();
             //console.log(resJson);
